@@ -59,3 +59,44 @@ ul {
   background-color: #1992d4;
   color: white;
 }
+
+.your_projects {
+  display: grid;
+  background-color: #e2e8f0;
+}
+
+.projects_title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: end;
+  justify-self: start;
+  margin-left: 1rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column: 1 / 3;
+  gap: 1rem;
+  justify-self: start;
+}
+
+.card {
+  background-color: white;
+  border-left: 0.3rem solid #f0b429;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.title {
+  font-size: 26px;
+  align-self: flex-start;
+}
+
+.content {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+}
