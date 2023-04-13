@@ -85,18 +85,24 @@ ul {
   background-color: white;
   border-left: 0.3rem solid #f0b429;
   height: 15rem;
-  display: flex;
-  flex-direction: column;
+  /*display: flex;
+  flex-direction: column;*/
+  display: grid;
   overflow: auto;
 }
 
 .title {
   font-size: 26px;
-  align-self: flex-start;
+  justify-self: start;
 }
 
 .content {
   font-weight: normal;
   font-size: 18px;
   text-align: left;
+}
+
+.card_buttons {
+  align-self: end;
+  justify-self: end;
 }
