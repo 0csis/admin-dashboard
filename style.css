@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Roboto';
 }
 
 ul {
@@ -16,7 +19,6 @@ ul {
 
 .container div {
   padding: 15px;
-  font-size: 32px;
   font-weight: bold;
 }
 
@@ -24,10 +26,12 @@ ul {
   grid-row: 1 / 5;
   background-color: #1992d4;
   color: white;
+  width: auto;
 }
 
 .dashboard {
   text-align: start;
+  font-size: 28px;
 }
 
 .dashboard_options1 {
@@ -55,6 +59,11 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hi {
+  font-size: 12px;
+  margin-bottom: 0.4rem;
 }
 
 .header_down_right_buttons {
