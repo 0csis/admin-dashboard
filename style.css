@@ -15,6 +15,11 @@ ul {
   list-style-type: none;
 }
 
+li,
+button {
+  cursor: pointer;
+}
+
 .container {
   text-align: center;
   display: grid;
@@ -86,6 +91,7 @@ ul {
   grid-column: 2 / 4;
   text-align: start;
   background-color: white;
+  border-bottom: 0.3rem solid lightgray;
 }
 
 .searchbar {
@@ -93,22 +99,84 @@ ul {
   justify-content: space-between;
   align-items: center;
   margin-top: -1.4rem;
+  margin-bottom: -2.5rem;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+}
+
+.search_icon {
+  width: 1.5rem;
+}
+
+.search-bar {
+  background-color: #e2e8f0;
+  border-style: none;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  width: 100%;
+}
+
+.header_right_part {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-right: 2rem;
+}
+
+.bell {
+  width: 1.2rem;
+}
+
+.morgan_icon_upper {
+  width: 3.0rem;
+}
+
+.morgan {
+  font-size: 14px;
 }
 
 .greetings_and_buttons {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: -1.5rem;
+}
+
+.morgan_icon {
+  max-width: 4rem;
+  max-height: 5rem;
+}
+
+.left_greeting {
+  display: flex;
+  gap: 0.5rem;
 }
 
 .hi {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 0.4rem;
+  display: flex;
+}
+
+.right_greeting {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: auto;
 }
 
 .header_down_right_buttons {
   background-color: #1992d4;
   color: white;
+  border-radius: 0.8rem;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-style: none;
+  width: 5rem;
 }
 
 .your_projects {
