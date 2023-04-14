@@ -6,6 +6,11 @@
   font-family: 'Roboto';
 }
 
+a {
+  list-style-type: none;
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -32,11 +37,46 @@ ul {
 .dashboard {
   text-align: start;
   font-size: 28px;
+  display: flex;
+  align-items: center;
 }
 
-.dashboard_options1 {
-  text-align: start;
+.dashboard_img {
+  width: 3rem;
+  margin-right: 0.2rem;
 }
+
+.dashboard_options1,
+.dashboard_options2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  text-align: start;
+  align-items: center;
+}
+
+.dashboard_01_icons,
+.dashboard_02_icons {
+  grid-column: 1 / 2;
+  margin-left: 0.8rem;
+}
+
+.dashboard_01_texts,
+.dashboard_02_texts {
+  grid-column: 2 / 3;
+  margin-left: -1.1rem;
+}
+
+.dashboard_01_icon, 
+.dashboard_02_icon {
+  width: 1.0rem;
+  margin-bottom: 0.9rem;
+}
+
+.dashboard_01_text,
+.dashboard_02_text {
+  margin-bottom: 0.9rem;
+}
+
 
 .dashboard_options2 {
   text-align: start;
