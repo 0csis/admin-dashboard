@@ -10,6 +10,7 @@ ul {
 .container {
   text-align: center;
   display: grid;
+  background-color: #e2e8f0;
   grid-template-columns: 1fr 3fr 1fr;
 }
 
@@ -40,6 +41,7 @@ ul {
 .header {
   grid-column: 2 / 4;
   text-align: start;
+  background-color: white;
 }
 
 .searchbar {
@@ -61,21 +63,18 @@ ul {
 }
 
 .your_projects {
-  display: grid;
-  background-color: #e2e8f0;
+  display: flex;
+  flex-direction: column;
 }
 
 .projects_title {
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
-  align-self: end;
-  justify-self: start;
+  text-align: start;
   margin-left: 1rem;
 }
 
 .projects {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 2fr));
   grid-column: 1 / 3;
   gap: 1rem;
   justify-self: start;
@@ -85,8 +84,6 @@ ul {
   background-color: white;
   border-left: 0.3rem solid #f0b429;
   height: 15rem;
-  /*display: flex;
-  flex-direction: column;*/
   display: grid;
   overflow: auto;
 }
@@ -105,4 +102,67 @@ ul {
 .card_buttons {
   align-self: end;
   justify-self: end;
+}
+
+.right_sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #e2e8f0;
+}
+
+.announcements {
+  display: grid;
+  grid-column: 3 / 4;
+  margin-top: 1.0rem;
+  background-color: white;
+  gap: 1rem;
+}
+
+.announcement {
+  display: grid;
+  margin-top: -1rem;
+  border-bottom: solid 0.1rem lightgray;
+}
+
+.last {
+  border-bottom: none;
+}
+
+.announcement_title,
+.trending_title {
+  text-align: start;
+}
+
+.announcement_name {
+  font-size: 22px;
+  text-align: left;
+}
+
+.announcement_content {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.trending {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row-start: 2;
+  margin-top: 1.4rem;
+  background-color: white;
+}
+
+.trending_title {
+  margin-top: 2.4rem;
+}
+
+.username {
+  font-size: 20px;
+  text-align: left;
+}
+
+.user_description {
+  font-size: 16px;
+  font-weight: normal;
+  text-align: left;
 }
