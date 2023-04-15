@@ -105,7 +105,7 @@ button {
 .search-form {
   display: flex;
   align-items: center;
-  width: 30rem;
+  width: 40rem;
 }
 
 .search_icon {
@@ -187,6 +187,7 @@ button {
 .projects_title {
   text-align: start;
   margin-left: 1rem;
+  font-size: 20px;
 }
 
 .projects {
@@ -199,26 +200,46 @@ button {
 
 .card {
   background-color: white;
-  border-left: 0.3rem solid #f0b429;
-  height: 15rem;
+  border-left: 0.4rem solid #f0b429;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.3rem 0 lightgray;
+  height: 10rem;
   display: grid;
   overflow: auto;
 }
 
 .title {
-  font-size: 26px;
+  font-size: 18px;
   justify-self: start;
 }
 
 .content {
   font-weight: normal;
-  font-size: 18px;
+  font-size: 14px;
   text-align: left;
+  color: grey;
 }
 
 .card_buttons {
-  align-self: end;
-  justify-self: end;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.8rem;
+  align-items: end;
+}
+
+.card_button1 {
+  grid-column: 3 / 4;
+  width: 1.6rem;
+}
+
+.card_button2 {
+  grid-column: 4 / 5;
+  width: 1.6rem;
+}
+
+.card_button3 {
+  grid-column: 5 / 6;
+  width: 1.6rem;
 }
 
 .right_sidebar {
@@ -227,12 +248,15 @@ button {
   background-color: #e2e8f0;
 }
 
+
 .announcements {
   display: grid;
   grid-column: 3 / 4;
   margin-top: 1.0rem;
   background-color: white;
   gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.3rem 0 lightgray;
 }
 
 .announcement {
@@ -248,38 +272,63 @@ button {
 .announcement_title,
 .trending_title {
   text-align: start;
+  font-size: 18px;
 }
 
 .announcement_name {
-  font-size: 22px;
+  font-size: 14px;
   text-align: left;
 }
 
 .announcement_content {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   text-align: left;
-}
-
-.trending {
-  display: grid;
-  grid-column: 3 / 4;
-  grid-row-start: 2;
-  margin-top: 1.4rem;
-  background-color: white;
+  color: grey;
 }
 
 .trending_title {
   margin-top: 2.4rem;
 }
 
+.trending {
+  display: grid;
+  grid-column: 3 / 4;
+  margin-top: 1.0rem;
+  background-color: white;
+  padding: 1rem;
+  padding-bottom: 0.1rem;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.3rem 0.3rem 0 lightgray;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
 .username {
-  font-size: 20px;
+  font-size: 16px;
   text-align: left;
+  font-weight: normal;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 
 .user_description {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: normal;
   text-align: left;
+  color: grey;
+  grid-row: 2 / 3;
+  margin-top: -0.6rem;
+  grid-column: 2 / 3;
+}
+
+.user_icon {
+  width: 3rem;
+  grid-column: 1 / 2;
+  margin-bottom: -0.9rem;
 }
